@@ -1,0 +1,9 @@
+{
+	"name": "df-nithinazurepjt",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "63ede785-6406-4d2c-8ac5-3df6db47b1b2",
+		"tenantId": "1725b13e-e5ab-4f27-bcd9-fee915f4ce13"
+	}
+}
