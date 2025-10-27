@@ -291,7 +291,7 @@
 												"parameters": {
 													"container": "bronze",
 													"folder": {
-														"value": "@{activity('max_cdc')}.output",
+														"value": "@activity('max_cdc').output",
 														"type": "Expression"
 													},
 													"file": "empty.json"
