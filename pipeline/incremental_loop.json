@@ -320,7 +320,7 @@
 		"parameters": {
 			"loop_input": {
 				"type": "array",
-				"defaultValue": "[   {     \"schema\" : \"dbo\"     \"table\" : \"DimUser\"     \"cdc\" : \"updated_at\"     \"from_table\" : \"\"   },    {     \"schema\" : \"dbo\"     \"table\" : \"DimTrack\"     \"cdc\" : \"updated_at\"     \"from_table\" : \"\"   },   {     \"schema\" : \"dbo\"     \"table\" : \"DimDate\"     \"cdc\" : \"updated_at\"     \"from_table\" : \"\"   },   {     \"schema\" : \"dbo\"     \"table\" : \"DimArtist\"     \"cdc\" : \"updated_at\"     \"from_table\" : \"\"   },   {     \"schema\" : \"dbo\"     \"table\" : \"factStream\"     \"cdc\" : \"updated_at\"     \"from_table\" : \"\"   }, ]"
+				"defaultValue": "[   {     \"schema\" : \"dbo\",     \"table\" : \"DimUser\",     \"cdc\" : \"updated_at\",     \"from_table\" : \"\"   },    {     \"schema\" : \"dbo\",     \"table\" : \"DimTrack\",     \"cdc\" : \"updated_at\",     \"from_table\" : \"\"   },   {     \"schema\" : \"dbo\",     \"table\" : \"DimDate\",     \"cdc\" : \"updated_at\",     \"from_table\" : \"\"   },   {     \"schema\" : \"dbo\",     \"table\" : \"DimArtist\",     \"cdc\" : \"updated_at\",     \"from_table\" : \"\"   },   {     \"schema\" : \"dbo\",     \"table\" : \"factStream\",     \"cdc\" : \"updated_at\",     \"from_table\" : \"\"   }, ]"
 			}
 		},
 		"variables": {
