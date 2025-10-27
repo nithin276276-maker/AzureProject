@@ -259,7 +259,7 @@
 													{
 														"name": "cdc",
 														"value": {
-															"value": "@activity('max_cdc').output.resultSets[0].rows[0].cdc",
+															"value": "@{activity('max_cdc')}.output.resultSets[0].rows[0].cdc",
 															"type": "Expression"
 														}
 													}
@@ -291,7 +291,7 @@
 												"parameters": {
 													"container": "bronze",
 													"folder": {
-														"value": "@activity('max_cdc').output",
+														"value": "@{activity('max_cdc')}.output",
 														"type": "Expression"
 													},
 													"file": "empty.json"
@@ -305,7 +305,7 @@
 												"parameters": {
 													"container": "bronze",
 													"folder": {
-														"value": "@item().table_cdc",
+														"value": "@{item().table}_cdc",
 														"type": "Expression"
 													},
 													"file": "cdc.json"
