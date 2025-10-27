@@ -8,6 +8,11 @@
 				"dependsOn": [],
 				"userProperties": [],
 				"typeProperties": {
+					"items": {
+						"value": "[\n  {\n    \"schema\" : \"dbo\"\n    \"table\" : \"DimUser\"\n    \"cdc\" : \"updated_at\"\n    \"from_table\" : \"\"\n  },\n   {\n    \"schema\" : \"dbo\"\n    \"table\" : \"DimTrack\"\n    \"cdc\" : \"updated_at\"\n    \"from_table\" : \"\"\n  },\n  {\n    \"schema\" : \"dbo\"\n    \"table\" : \"DimDate\"\n    \"cdc\" : \"updated_at\"\n    \"from_table\" : \"\"\n  },\n  {\n    \"schema\" : \"dbo\"\n    \"table\" : \"DimArtist\"\n    \"cdc\" : \"updated_at\"\n    \"from_table\" : \"\"\n  },\n  {\n    \"schema\" : \"dbo\"\n    \"table\" : \"factStream\"\n    \"cdc\" : \"updated_at\"\n    \"from_table\" : \"\"\n  },\n]",
+						"type": "Expression"
+					},
+					"isSequential": true,
 					"activities": [
 						{
 							"name": "AzureSQLToLake",
@@ -180,11 +185,11 @@
 												"parameters": {
 													"container": "bronze",
 													"folder": {
-														"value": "@pipeline().parameters.table",
+														"value": "@item().table\n",
 														"type": "Expression"
 													},
 													"file": {
-														"value": "@concat(pipeline().parameters.table,'_',variables('current'))",
+														"value": "@concat(item().table,'_',variables('current'))",
 														"type": "Expression"
 													}
 												}
